@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <link rel="stylesheet"  href="{%  static  'css/style.css'  %}">
+    <meta charset="UTF-8">
+    <title>web_cam</title>
+</head>
+<body>
+<center>
+   <img src="{% url 'video_feed' %}">
+
+
+   <form action="{% url 'capture'%}">
+       <input type="text" name="name",place
+              holder="enter your name"><br><br>
+
+       <button>capture</button>
+   </form>
+{{text}}
+{{name}}
+    </center>
+</body>
+</html>
